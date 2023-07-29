@@ -1,0 +1,130 @@
+/* css reset  */
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+
+
+}
+
+/* CSS Variables  */
+:root {
+    --navbar-height: 59px
+}
+
+/* Navigation bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+
+}
+
+/* Navigation bar: logo and img  */
+#logo {
+    margin: 2px 4px;
+
+}
+
+#logo img {
+    height: 98px;
+    margin: 4px 5px;
+
+}
+
+/*Navigation bar: list styling  */
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+#navbar ul li a {
+    padding: 23px 23px;
+    display: block;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+
+
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+
+
+}
+
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    /* The image used */
+    background-image: url('../bg3.avif');
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home h1 {
+    color: black;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;}
+
+
+
+    #home p {
+        color: black;
+        text-align: center;
+        font-size: 1.3em;
+        font-family: 'Roboto Condensed', sans-serif;}
+
+
+
+        /* Utility classes  */
+
+        .h-primary {
+            font-size: 2.2rem;
+            padding: 20px;
+
+
+        }
